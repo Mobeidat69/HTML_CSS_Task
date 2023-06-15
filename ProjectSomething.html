@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Sharing Website - Prototype</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #FF7900;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            margin: 0;
+            font-size: 32px;
+        }
+        
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        section {
+            margin-bottom: 40px;
+        }
+        
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        
+        .recipe-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        
+        .recipe-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        h3 {
+            color: #333;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            margin: 0 0 10px;
+        }
+        
+        .description {
+            color: #777;
+            margin-bottom: 10px;
+        }
+        
+        .ingredients,
+        .instructions {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .read-more {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FF7900;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+        
+        .read-more:hover {
+            background-color: #FF5900;
+        }
+        
+        form label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+        }
+        
+        form input[type="text"],
+        form textarea {
+            width: 100%;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+        
+        form button[type="submit"] {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #FF7900;
+            border-radius: 5px;
+            border: none;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        
+        form button[type="submit"]:hover {
+            background-color: #FF5900;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recipe Sharing Website</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>Latest Recipes</h2>
+            <div class="recipe-card">
+                <h3>Recipe Title</h3>
+                <p class="description">Description of the recipe.</p>
+                <p class="ingredients">Ingredients: Ingredient 1, Ingredient 2, Ingredient 3</p>
+                <p class="instructions">Instructions: Step 1, Step 2, Step 3</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <!-- Repeat the recipe card for more recipes -->
+        </section>
+
+        <section>
+            <h2>Add a Recipe</h2>
+            <form action="submit_recipe.php" method="post">
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title" required>
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" required></textarea>
+                <label for="ingredients">Ingredients:</label>
+                <textarea id="ingredients" name="ingredients" required></textarea>
+                <label for="instructions">Instructions:</label>
+                <textarea id="instructions" name="instructions" required></textarea>
+                <button type="submit">Submit Recipe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Recipe Sharing Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
