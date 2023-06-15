@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Employee Intrests Survey Form</title>
+</head>
+<body>
+  <h2>Employee Intrests Survey Form</h2>
+
+  <form>
+    <label for="name">Enter your name:</label>
+    <input type="text" id="name" name="name"><br>
+    <br>
+    <label for="department">Enter your department:</label>
+    <input type="text" id="department" name="department"><br>
+    <br>
+    <label for="about">Tell us about yourself:</label>
+    <textarea id="about" name="about"></textarea><br>
+    <br>
+    <label for="exercise">Do you exercise at home?</label>
+    <input type="radio" id="exercise-yes" name="exercise" value="yes">
+    <label for="exercise-yes">Yes</label>
+    <input type="radio" id="exercise-no" name="exercise" value="no">
+    <label for="exercise-no">No</label><br>
+    <br>
+    
+    <label for="read-preference">How do you like to read about your favorite topics?</label><br>
+    <br>
+    <input type="checkbox" id="books" name="read-preference" value="books">
+    <label for="books">Books</label>
+    <input type="checkbox" id="online-resources" name="read-preference" value="online-resources">
+    <label for="online-resources">Online Resources</label>
+    <input type="checkbox" id="mobile-apps" name="read-preference" value="mobile-apps">
+    <label for="mobile-apps">Mobile Apps</label>
+    <input type="checkbox" id="magazines" name="read-preference" value="magazines">
+    <label for="magazines">Magazines</label>
+    <br>
+    <br>
+    <form action="/action_page.php">
+        <label for="cars">What movie genre do you like:</label>
+        <select name="cars" id="cars">
+          <option value="volvo">Comedy</option>
+          <option value="saab">Action</option>
+          <option value="opel">Drama</option>
+          <option value="audi">Thriller</option>
+        </select>
+    <br>
+    <br>
+    <input type="submit" value="Submit form">
+  </form>
+</body>
+</html>
