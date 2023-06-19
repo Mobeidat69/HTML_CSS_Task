@@ -1,0 +1,29 @@
+
+         body {
+        background-color: beige;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0;
+      padding: 20px;
+      border: 1px solid black;
+    }
+     .container2 {
+      max-width: 400px;
+      margin: 0;
+      padding: 20px;
+      border: 1px dashed black;
+    }
+    .container3 {
+      max-width: 400px;
+      margin: 0;
+      padding: 20px;
+      border: 1px dashed rgba(245, 5, 241, 0.788);
+    }
+        .highlight {
+            background-color: rgba(184, 134, 26, 0.823);
+        }
+        .highlight1 {
+            background-color: rgba(255, 0, 0, 0.823);
+        }
