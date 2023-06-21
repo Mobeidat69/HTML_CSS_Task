@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Grid</title>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+    }
+
+    .grid-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f1f1f1;
+      border: 1px solid #ccc;
+    }
+
+    .grid-item img {
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item">
+      <img src="./Profile Picture.jpg" alt="Image 1">
+    </div>
+    <div class="grid-item">
+      <img src="../assortment-of-colorful-ripe-tropical-fruits-top-royalty-free-image-995518546-1564092355.jpg" alt="Image 2">
+    </div>
+    <div class="grid-item">
+      <img src="../boy-looks-surprise-large-open-2702814.jpg" alt="Image 3">
+    </div>
+    <div class="grid-item">
+      <img src="../Orange-Logo-JPG.jpg" alt="Image 4">
+    </div>
+    <div class="grid-item">
+      <img src="../index background.jpg" alt="Image 5">
+    </div>
+    <div class="grid-item">
+      <img src="../youtube.png" alt="Image 6">
+    </div>
+    <div class="grid-item">
+      <img src="../white.png" alt="Image 7">
+    </div>
+    <div class="grid-item">
+      <img src="../facebook-logo-icon-facebook-logo-png-transparent-svg-vector-bie-supply-16.png" alt="Image 8">
+    </div>
+  </div>
+</body>
+</html>
